@@ -61,5 +61,6 @@ def calculate_output(X, W, b):
     Calculate the output of the neuron.
     Hint: use the functions you implemented above.
     """
+    sum_total = calculate_matrix_prod_with_bias(X, W, b)
     res = calculate_activation(sum_total)  # TODO: implement this function 
     return res
